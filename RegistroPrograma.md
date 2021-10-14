@@ -7,7 +7,7 @@ from tkinter import *
 
 def presidenteCadastro():
     def salvarPresidente():
-        cursor.execute(f"INSERT INTO Cadastro_Presidente VALUES ('{Entry3.get()}',{Entry4.get()},{Entry5.get()},{Entry6.get()})")
+        cursor.execute(f"INSERT INTO Cadastro_Presidente VALUE ('{Entry3.get()}',{Entry4.get()},{Entry5.get()},{Entry6.get()})")
         con.commit()
         try:
             with open('Presidente_Cadastrado.txt', 'a') as arquivoUsuario:
